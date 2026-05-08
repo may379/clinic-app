@@ -2,11 +2,15 @@ ClinicMS — Clinic Management System
 
 A full-stack MERN clinic management platform with role-based access control for managing patients, doctors, and appointments efficiently.
 
-🚀 Quick Start
-Prerequisites
+##🚀 Quick Start
+
+##Prerequisites
+
 Node.js 18+
 MongoDB (local or Atlas)
-⚙️ Backend Setup
+
+##⚙️ Backend Setup
+
 cd backend
 npm install
 cp .env.example .env
@@ -16,7 +20,8 @@ Example .env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-💻 Frontend Setup
+
+##💻 Frontend Setup
 cd frontend
 npm install
 npm run dev
@@ -24,12 +29,17 @@ npm run dev
 Frontend runs at:
 
 http://localhost:5173
-👥 Roles & Permissions
+
+
+##👥 Roles & Permissions
 Role	Access
 Admin	Full system control (users, doctors, appointments)
 Doctor	Manage assigned patients & update appointments
 Patient	Book appointments & view history
-🛠 Tech Stack
+
+
+
+##🛠 Tech Stack
 Frontend
 React 18
 Vite
@@ -41,7 +51,10 @@ Express.js
 MongoDB & Mongoose
 JWT Authentication
 bcrypt
-📁 Project Structure
+
+
+
+##📁 Project Structure
 ClinicMS/
 │
 ├── backend/
@@ -58,7 +71,8 @@ ClinicMS/
 │   └── main.jsx
 │
 └── README.md
-🔐 Features
+
+##🔐 Features
 Secure authentication (JWT)
 Role-based authorization
 Appointment booking system
@@ -66,7 +80,9 @@ Patient management
 Doctor dashboard
 Protected routes
 REST API architecture
-🚀 Deployment
+
+
+##🚀 Deployment
 Frontend
 Vercel
 Netlify
@@ -74,18 +90,24 @@ Backend
 Render
 Railway
 VPS (Docker optional)
-📌 Future Improvements
+
+
+##📌 Future Improvements
 Email notifications
 SMS reminders
 Payment integration
 Medical records history
 AI assistant for diagnosis support
-👨‍💻 Author
+
+
+##👨‍💻 Author
 
 May Amor
 
 GitHub: https://github.com/may379
 
-📄 License
+
+
+##📄 License
 
 This project is licensed under the MIT License.
