@@ -31,12 +31,9 @@ Frontend runs at:
 http://localhost:5173
 
 
-##👥 Roles & Permissions
-Role	Access
-Admin	Full system control (users, doctors, appointments)
-Doctor	Manage assigned patients & update appointments
-Patient	Book appointments & view history
 
+##👥 Roles & Permissions
+ Role | Access | |------|--------| | Admin | Full system control, manage users & appointments | | Doctor | View assigned patients, update appointment status | | Patient | Book appointments, view history & notifications |
 
 
 ##🛠 Tech Stack
@@ -55,6 +52,8 @@ bcrypt
 
 
 ##📁 Project Structure
+
+
 ClinicMS/
 │
 ├── backend/
@@ -71,6 +70,8 @@ ClinicMS/
 │   └── main.jsx
 │
 └── README.md
+
+
 
 ##🔐 Features
 Secure authentication (JWT)
