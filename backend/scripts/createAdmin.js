@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
 const dotenv = require('dotenv');
 const User = require('../models/User');
 
@@ -9,6 +8,7 @@ const createAdmin = async () => {
   try {
     // connect DB
     await mongoose.connect(process.env.MONGO_URI);
+
     console.log('MongoDB connected');
 
     // check if admin already exists
@@ -19,15 +19,12 @@ const createAdmin = async () => {
       process.exit();
     }
 
-    // hash password
-    const hashedPassword = await bcrypt.hash('admin123', 10);
-
     // create admin
     const admin = await User.create({
       name: 'System Admin',
       email: 'admin@clinic.com',
-      password: hashedPassword,
-      role: 'admin'
+      password: 'admin123',
+      role: 'admin',
     });
 
     console.log('✅ Admin created successfully');
