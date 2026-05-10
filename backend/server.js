@@ -16,7 +16,10 @@ const app = express();
 
 // 🔥 Security & stability middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || "*",
+  origin: [
+    "http://localhost:5173",
+    "https://clinic-app-weld.vercel.app"
+  ],
   credentials: true,
 }));
 
